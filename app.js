@@ -149,21 +149,57 @@ const mockEvents = [
     },
 
     {
-        id: 8,
-        title: "Thandiswa Mazwai Live",
+        id: 9,
+        title: "Thandiswa Mazwai: Sankofa Live",
         category: "Music",
-        date: "2026-12-09",
+        date: "2026-12-08",
         time: "19:00",
-        venue: "Big Top Arena Carnival City",
-        location: "Brakpan, Gauteng",
-        image: "https://images.unsplash.com/photo-1533174072545-7a4b6ad7a6c3?w=800&q=80",
-        price: 300,
-        available: 4567,
-        description: "The Queen makes another appearance! Thandiswa Mazwai brings her soulful sounds and powerful stage presence to the Big Top Arena for one unforgettable night.",
+        venue: "Big Top Arena",
+        location: "Johannesburg, Gauteng",
+        image: "https://images.unsplash.com/photo-1501281668745-f7f57925c3b4?w=800&q=80",
+        price: 320,
+        available: 678,
+        description: "The Queen of Afro-Soul returns! Thandiswa Mazwai delivers a powerful performance celebrating African music, heritage, and resistance. Experience her iconic voice live.",
         ticketTypes: [
-            { id: 1, name: "General Access", price: 350, available: 4567 },
-            { id: 2, name: "Golden Circle", price: 650, available: 890 },
-            { id: 3, name: "VIP Deck", price: 1500, available: 145 }
+            { id: 1, name: "General Standing", price: 320, available: 678 },
+            { id: 2, name: "Reserved Seating", price: 550, available: 234 },
+            { id: 3, name: "VIP Package", price: 1200, available: 18 }
+        ]
+    },
+    {
+        id: 10,
+        title: "A-Reece: The Reece Effect Tour",
+        category: "Music",
+        date: "2026-08-16",
+        time: "20:00",
+        venue: "Propaganda Pretoria",
+        location: "Pretoria, Gauteng",
+        image: "https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?w=800&q=80",
+        price: 280,
+        available: 456,
+        description: "The Big Hearted Bad Guy brings The Reece Effect to Pretoria! A-Reece performs hits from his entire catalogue in an intimate setting. Featuring special guests from The Wrecking Crew.",
+        ticketTypes: [
+            { id: 1, name: "General Entry", price: 280, available: 456 },
+            { id: 2, name: "Early Entry", price: 400, available: 89 },
+            { id: 3, name: "VIP Meet & Greet", price: 1500, available: 12 }
+        ]
+    },
+    {
+        id: 11,
+        title: "SA Hip-Hop Fest: The Culture Lives",
+        category: "Music",
+        date: "2026-09-21",
+        time: "16:00",
+        venue: "WeBuyCars Dome",
+        location: "Johannesburg, Gauteng",
+        image: "https://images.unsplash.com/photo-1524368535928-5b5e00ddc76b?w=800&q=80",
+        price: 400,
+        available: 2890,
+        description: "The ultimate SA Hip-Hop celebration! Featuring Nasty C, Cassper Nyovest, K.O, Kwesta, Reason, Stogie T, and many more. Experience the full spectrum of South African rap excellence.",
+        ticketTypes: [
+            { id: 1, name: "General Access", price: 400, available: 2890 },
+            { id: 2, name: "Golden Circle", price: 750, available: 456 },
+            { id: 3, name: "VIP Lounge", price: 2000, available: 67 }
         ]
     }
 ];
