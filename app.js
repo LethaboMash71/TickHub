@@ -4,72 +4,146 @@
 const mockEvents = [
     {
         id: 1,
-        title: "Electric Dreams Festival",
-        category: "Music",
-        date: "2024-08-15",
-        time: "18:00",
-        venue: "Sunset Arena",
-        location: "Los Angeles, CA",
-        image: "https://images.unsplash.com/photo-1470229722913-7c0e2dbbafd3?w=800&q=80",
-        price: 89,
-        available: 234,
-        description: "Three stages of electronic music featuring world-class DJs from around the world. Experience the best in house, techno, and trance music.",
+        title: "Soweto Derby: Kaizer Chiefs vs Orlando Pirates",
+        category: "Sports",
+        date: "2024-08-17",
+        time: "15:00",
+        venue: "FNB Stadium",
+        location: "Johannesburg, Gauteng",
+        image: "https://images.unsplash.com/photo-1574629810360-7efbbe195018?w=800&q=80",
+        price: 150,
+        available: 2340,
+        description: "The biggest rivalry in South African football! Experience the electric atmosphere as Amakhosi take on the Buccaneers in this historic Soweto Derby.",
         ticketTypes: [
-            { id: 1, name: "General Admission", price: 89, available: 234 },
-            { id: 2, name: "VIP Pass", price: 189, available: 45 },
-            { id: 3, name: "Early Bird", price: 69, available: 0 }
+            { id: 1, name: "General Standing", price: 150, available: 2340 },
+            { id: 2, name: "Grandstand Seating", price: 350, available: 456 },
+            { id: 3, name: "VIP Suite", price: 1200, available: 34 }
         ]
     },
     {
         id: 2,
-        title: "Lakers vs Warriors",
+        title: "Mamelodi Sundowns vs Orlando Pirates",
         category: "Sports",
-        date: "2024-07-20",
+        date: "2024-07-28",
         time: "19:30",
-        venue: "Crypto.com Arena",
-        location: "Los Angeles, CA",
-        image: "https://images.unsplash.com/photo-1504450758481-7338eba7524a?w=800&q=80",
-        price: 125,
-        available: 89,
-        description: "NBA rivalry game - Western Conference showdown. Watch two of the best teams battle it out on the court.",
+        venue: "Loftus Versfeld Stadium",
+        location: "Pretoria, Gauteng",
+        image: "https://images.unsplash.com/photo-1508098682722-e99c43a406b2?w=800&q=80",
+        price: 180,
+        available: 1567,
+        description: "PSL Champions Sundowns host the Buccaneers in a top-of-the-table clash. Don't miss this crucial league encounter!",
         ticketTypes: [
-            { id: 1, name: "Upper Bowl", price: 125, available: 89 },
-            { id: 2, name: "Lower Bowl", price: 245, available: 23 },
-            { id: 3, name: "Courtside", price: 850, available: 4 }
+            { id: 1, name: "General Admission", price: 180, available: 1567 },
+            { id: 2, name: "Premium Seating", price: 400, available: 234 },
+            { id: 3, name: "Executive Box", price: 1500, available: 8 }
         ]
     },
     {
         id: 3,
-        title: "Jazz in the Park",
-        category: "Music",
-        date: "2024-07-28",
-        time: "17:00",
-        venue: "Central Park Bandshell",
-        location: "New York, NY",
-        image: "https://images.unsplash.com/photo-1415201364774-f6f0bb35f28f?w=800&q=80",
-        price: 45,
-        available: 567,
-        description: "Outdoor jazz concert featuring Grammy winners. Enjoy an evening of smooth jazz in a beautiful park setting.",
+        title: "Kaizer Chiefs vs Mamelodi Sundowns",
+        category: "Sports",
+        date: "2024-08-24",
+        time: "15:00",
+        venue: "FNB Stadium",
+        location: "Johannesburg, Gauteng",
+        image: "https://images.unsplash.com/photo-1431324155629-1a6deb1dec8d?w=800&q=80",
+        price: 200,
+        available: 3456,
+        description: "Amakhosi vs The Brazilians! Two of SA's biggest clubs go head-to-head in this massive PSL showdown.",
         ticketTypes: [
-            { id: 1, name: "Lawn Seating", price: 45, available: 567 },
-            { id: 2, name: "Reserved Seating", price: 85, available: 123 }
+            { id: 1, name: "General Standing", price: 200, available: 3456 },
+            { id: 2, name: "Grandstand", price: 450, available: 567 },
+            { id: 3, name: "VIP Experience", price: 1800, available: 23 }
         ]
     },
     {
         id: 4,
-        title: "Comedy Night Live",
-        category: "Comedy",
-        date: "2024-08-05",
+        title: "Major League DJz Amapiano Live",
+        category: "Music",
+        date: "2024-07-20",
         time: "20:00",
-        venue: "Laugh Factory",
-        location: "Chicago, IL",
-        image: "https://images.unsplash.com/photo-1585699324551-f6c309eedeca?w=800&q=80",
-        price: 55,
-        available: 145,
-        description: "Stand-up comedy showcase with special guests. Laugh the night away with top comedians.",
+        venue: "Sun Arena",
+        location: "Pretoria, Gauteng",
+        image: "https://images.unsplash.com/photo-1470229722913-7c0e2dbbafd3?w=800&q=80",
+        price: 250,
+        available: 892,
+        description: "The pioneers of Amapiano bring you an unforgettable night of pure piano vibes! Featuring special guests from the Balcony Mix.",
         ticketTypes: [
-            { id: 1, name: "Standard", price: 55, available: 145 },
-            { id: 2, name: "Premium Front Row", price: 95, available: 12 }
+            { id: 1, name: "General Access", price: 250, available: 892 },
+            { id: 2, name: "Golden Circle", price: 500, available: 123 },
+            { id: 3, name: "VIP Table (4 people)", price: 3500, available: 12 }
+        ]
+    },
+    {
+        id: 5,
+        title: "Kabza De Small & DJ Maphorisa Live",
+        category: "Music",
+        date: "2024-08-10",
+        time: "21:00",
+        venue: "TicketPro Dome",
+        location: "Johannesburg, Gauteng",
+        image: "https://images.unsplash.com/photo-1514525253161-7a46d19cd819?w=800&q=80",
+        price: 300,
+        available: 1234,
+        description: "Scorpion Kings take over the Dome! Experience the kings of Amapiano with special performances from the best in the game.",
+        ticketTypes: [
+            { id: 1, name: "Standard Entry", price: 300, available: 1234 },
+            { id: 2, name: "VIP Section", price: 650, available: 178 },
+            { id: 3, name: "Private Booth (6 people)", price: 4500, available: 6 }
+        ]
+    },
+    {
+        id: 6,
+        title: "Trevor Noah: Off The Record Tour",
+        category: "Comedy",
+        date: "2024-09-15",
+        time: "19:00",
+        venue: "Montecasino Teatro",
+        location: "Johannesburg, Gauteng",
+        image: "https://images.unsplash.com/photo-1585699324551-f6c309eedeca?w=800&q=80",
+        price: 450,
+        available: 567,
+        description: "Trevor Noah returns home! The Daily Show host brings his international stand-up tour to South Africa for an exclusive run of shows.",
+        ticketTypes: [
+            { id: 1, name: "Standard Seating", price: 450, available: 567 },
+            { id: 2, name: "Premium Seating", price: 750, available: 89 },
+            { id: 3, name: "Meet & Greet Package", price: 2500, available: 0 }
+        ]
+    },
+    {
+        id: 7,
+        title: "Mpho Popps: Bae Goals Comedy Special",
+        category: "Comedy",
+        date: "2024-08-03",
+        time: "20:00",
+        venue: "Lyric Theatre",
+        location: "Johannesburg, Gauteng",
+        image: "https://images.unsplash.com/photo-1527224857830-43a7acc85260?w=800&q=80",
+        price: 280,
+        available: 345,
+        description: "Mpho Popps brings his hilarious take on relationships, culture, and everyday life in this brand new comedy special. Pure Mzansi comedy!",
+        ticketTypes: [
+            { id: 1, name: "General Seating", price: 280, available: 345 },
+            { id: 2, name: "Premium Front Section", price: 450, available: 67 },
+            { id: 3, name: "VIP Meet & Greet", price: 1200, available: 8 }
+        ]
+    },
+    {
+        id: 8,
+        title: "Amapiano All Stars Festival",
+        category: "Music",
+        date: "2024-07-27",
+        time: "14:00",
+        venue: "FNB Stadium",
+        location: "Johannesburg, Gauteng",
+        image: "https://images.unsplash.com/photo-1533174072545-7a4b6ad7a6c3?w=800&q=80",
+        price: 350,
+        available: 4567,
+        description: "The biggest Amapiano festival of the year! Featuring Kabza, Maphorisa, Major League DJz, DBN Gogo, Uncle Waffles, and many more!",
+        ticketTypes: [
+            { id: 1, name: "General Access", price: 350, available: 4567 },
+            { id: 2, name: "Golden Circle", price: 650, available: 890 },
+            { id: 3, name: "VIP Deck", price: 1500, available: 145 }
         ]
     }
 ];
@@ -120,7 +194,7 @@ function formatDate(dateString) {
 }
 
 function formatCurrency(amount) {
-    return `$${amount.toFixed(2)}`;
+    return `R${amount.toFixed(2)}`;
 }
 
 // ============================================
