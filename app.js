@@ -146,6 +146,25 @@ const mockEvents = [
             { id: 2, name: "Golden Circle", price: 650, available: 890 },
             { id: 3, name: "VIP Deck", price: 1500, available: 145 }
         ]
+    },
+
+    {
+        id: 8,
+        title: "Thandiswa Mazwai Live",
+        category: "Music",
+        date: "2026-12-09",
+        time: "19:00",
+        venue: "Big Top Arena Carnival City",
+        location: "Brakpan, Gauteng",
+        image: "https://images.unsplash.com/photo-1533174072545-7a4b6ad7a6c3?w=800&q=80",
+        price: 300,
+        available: 4567,
+        description: "The Queen makes another appearance! Thandiswa Mazwai brings her soulful sounds and powerful stage presence to the Big Top Arena for one unforgettable night.",
+        ticketTypes: [
+            { id: 1, name: "General Access", price: 350, available: 4567 },
+            { id: 2, name: "Golden Circle", price: 650, available: 890 },
+            { id: 3, name: "VIP Deck", price: 1500, available: 145 }
+        ]
     }
 ];
 
