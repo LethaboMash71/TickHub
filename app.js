@@ -15,9 +15,10 @@ const mockEvents = [
         available: 2340,
         description: "The biggest rivalry in South African football! Experience the electric atmosphere as Amakhosi take on the Buccaneers in this historic Soweto Derby.",
         ticketTypes: [
-            { id: 1, name: "General Standing", price: 150, available: 2340 },
-            { id: 2, name: "Grandstand Seating", price: 350, available: 456 },
-            { id: 3, name: "VIP Suite", price: 1200, available: 34 }
+            { id: 1, name: "Level 1", price: 120, available: 15750 },
+            { id: 2, name: "Level 2", price: 170, available: 23680 },
+            { id: 3, name: "Level 5", price: 100, available: 11000 },
+            { id: 4, name: "VIP Suite", price: 350, available: 300 }
         ]
     },
     {
@@ -33,9 +34,9 @@ const mockEvents = [
         available: 1567,
         description: "PSL Champions Sundowns host the Buccaneers in a top-of-the-table clash. Don't miss this crucial league encounter!",
         ticketTypes: [
-            { id: 1, name: "General Admission", price: 180, available: 1567 },
-            { id: 2, name: "Premium Seating", price: 400, available: 234 },
-            { id: 3, name: "Executive Box", price: 1500, available: 8 }
+            { id: 1, name: "Level 1", price: 120, available: 1567 },
+            { id: 2, name: "Level 2", price: 150, available: 234 },
+            { id: 3, name: "VIP suite", price: 280, available: 8 }
         ]
     },
     {
@@ -51,9 +52,9 @@ const mockEvents = [
         available: 3456,
         description: "Amakhosi vs The Brazilians! Two of SA's biggest clubs go head-to-head in this massive PSL showdown.",
         ticketTypes: [
-            { id: 1, name: "General Standing", price: 200, available: 3456 },
-            { id: 2, name: "Grandstand", price: 450, available: 567 },
-            { id: 3, name: "VIP Experience", price: 1800, available: 23 }
+            { id: 1, name: "Level 1", price: 120, available: 3456 },
+            { id: 2, name: "Level 2", price: 150, available: 567 },
+            { id: 3, name: "VIP Suite", price: 200, available: 23 }
         ]
     },
     {
