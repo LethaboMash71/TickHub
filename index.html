@@ -62,9 +62,23 @@
                 <button class="cart-btn" id="cart-btn">
                     Cart <span id="cart-count" class="cart-count hidden">0</span>
                 </button>
+                <button class="hamburger-btn" id="hamburger-btn" aria-label="Open menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
             </div>
         </div>
     </header>
+
+    <!-- Mobile Navigation Drawer -->
+    <nav class="mobile-nav" id="mobile-nav">
+        <button class="mobile-nav-close" id="mobile-nav-close">✕</button>
+        <a href="#" onclick="closeMobileNav()">Sports</a>
+        <a href="#" onclick="closeMobileNav()">Music</a>
+        <a href="#" onclick="closeMobileNav()">Comedy</a>
+        <a href="#" onclick="closeMobileNav()">Theatre</a>
+    </nav>
 
     <!-- Main Content -->
     <main id="main-content">
@@ -321,7 +335,7 @@
         </div>
     </div>
 
-     <!-- Footer -->
+    <!-- Footer -->
     <footer class="footer">
         <div class="container">
             <div class="footer-grid">

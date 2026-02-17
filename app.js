@@ -6,7 +6,7 @@ const mockEvents = [
         id: 1,
         title: "Soweto Derby: Kaizer Chiefs vs Orlando Pirates",
         category: "Sports",
-        date: "2026-08-17",
+        date: "2024-08-17",
         time: "15:00",
         venue: "FNB Stadium",
         location: "Johannesburg, Gauteng",
@@ -15,17 +15,16 @@ const mockEvents = [
         available: 2340,
         description: "The biggest rivalry in South African football! Experience the electric atmosphere as Amakhosi take on the Buccaneers in this historic Soweto Derby.",
         ticketTypes: [
-            { id: 1, name: "Level 1", price: 120, available: 15750 },
-            { id: 2, name: "Level 2", price: 170, available: 23680 },
-            { id: 3, name: "Level 5", price: 100, available: 11000 },
-            { id: 4, name: "VIP Suite", price: 350, available: 300 }
+            { id: 1, name: "General Standing", price: 150, available: 2340 },
+            { id: 2, name: "Grandstand Seating", price: 350, available: 456 },
+            { id: 3, name: "VIP Suite", price: 1200, available: 34 }
         ]
     },
     {
         id: 2,
         title: "Mamelodi Sundowns vs Orlando Pirates",
         category: "Sports",
-        date: "2026-09-28",
+        date: "2024-07-28",
         time: "19:30",
         venue: "Loftus Versfeld Stadium",
         location: "Pretoria, Gauteng",
@@ -34,16 +33,16 @@ const mockEvents = [
         available: 1567,
         description: "PSL Champions Sundowns host the Buccaneers in a top-of-the-table clash. Don't miss this crucial league encounter!",
         ticketTypes: [
-            { id: 1, name: "Level 1", price: 120, available: 1567 },
-            { id: 2, name: "Level 2", price: 150, available: 234 },
-            { id: 3, name: "VIP Suite", price: 280, available: 8 }
+            { id: 1, name: "General Admission", price: 180, available: 1567 },
+            { id: 2, name: "Premium Seating", price: 400, available: 234 },
+            { id: 3, name: "Executive Box", price: 1500, available: 8 }
         ]
     },
     {
         id: 3,
         title: "Kaizer Chiefs vs Mamelodi Sundowns",
         category: "Sports",
-        date: "2026-11-24",
+        date: "2024-08-24",
         time: "15:00",
         venue: "FNB Stadium",
         location: "Johannesburg, Gauteng",
@@ -52,18 +51,18 @@ const mockEvents = [
         available: 3456,
         description: "Amakhosi vs The Brazilians! Two of SA's biggest clubs go head-to-head in this massive PSL showdown.",
         ticketTypes: [
-            { id: 1, name: "Level 1", price: 120, available: 3456 },
-            { id: 2, name: "Level 2", price: 150, available: 567 },
-            { id: 3, name: "VIP Suite", price: 200, available: 23 }
+            { id: 1, name: "General Standing", price: 200, available: 3456 },
+            { id: 2, name: "Grandstand", price: 450, available: 567 },
+            { id: 3, name: "VIP Experience", price: 1800, available: 23 }
         ]
     },
     {
         id: 4,
         title: "Major League DJz Amapiano Live",
         category: "Music",
-        date: "2026-07-20",
+        date: "2024-07-20",
         time: "20:00",
-        venue: "SunBet Arena",
+        venue: "Sun Arena",
         location: "Pretoria, Gauteng",
         image: "https://images.unsplash.com/photo-1470229722913-7c0e2dbbafd3?w=800&q=80",
         price: 250,
@@ -79,9 +78,9 @@ const mockEvents = [
         id: 5,
         title: "Kabza De Small & DJ Maphorisa Live",
         category: "Music",
-        date: "2026-08-10",
+        date: "2024-08-10",
         time: "21:00",
-        venue: "WeBuyCars Dome",
+        venue: "TicketPro Dome",
         location: "Johannesburg, Gauteng",
         image: "https://images.unsplash.com/photo-1514525253161-7a46d19cd819?w=800&q=80",
         price: 300,
@@ -97,7 +96,7 @@ const mockEvents = [
         id: 6,
         title: "Trevor Noah: Off The Record Tour",
         category: "Comedy",
-        date: "2026-09-15",
+        date: "2024-09-15",
         time: "19:00",
         venue: "Montecasino Teatro",
         location: "Johannesburg, Gauteng",
@@ -115,7 +114,7 @@ const mockEvents = [
         id: 7,
         title: "Mpho Popps: Bae Goals Comedy Special",
         category: "Comedy",
-        date: "2026-08-03",
+        date: "2024-08-03",
         time: "20:00",
         venue: "Lyric Theatre",
         location: "Johannesburg, Gauteng",
@@ -133,7 +132,7 @@ const mockEvents = [
         id: 8,
         title: "Amapiano All Stars Festival",
         category: "Music",
-        date: "2026-07-27",
+        date: "2024-07-27",
         time: "14:00",
         venue: "FNB Stadium",
         location: "Johannesburg, Gauteng",
@@ -147,12 +146,11 @@ const mockEvents = [
             { id: 3, name: "VIP Deck", price: 1500, available: 145 }
         ]
     },
-
     {
         id: 9,
         title: "Thandiswa Mazwai: Sankofa Live",
         category: "Music",
-        date: "2026-12-08",
+        date: "2024-09-08",
         time: "19:00",
         venue: "Big Top Arena",
         location: "Johannesburg, Gauteng",
@@ -170,14 +168,14 @@ const mockEvents = [
         id: 10,
         title: "A-Reece: The Reece Effect Tour",
         category: "Music",
-        date: "2026-08-16",
+        date: "2024-08-16",
         time: "20:00",
         venue: "Propaganda Pretoria",
         location: "Pretoria, Gauteng",
         image: "https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?w=800&q=80",
         price: 280,
         available: 456,
-        description: "The Big Hearted Bad Guy brings The Reece Effect to Pretoria! A-Reece performs hits from his entire catalogue in an intimate setting. Featuring special guests from The Wrecking Crew.",
+        description: "The Paradise King brings The Reece Effect to Pretoria! A-Reece performs hits from his entire catalogue in an intimate setting. Featuring special guests from The Wrecking Crew.",
         ticketTypes: [
             { id: 1, name: "General Entry", price: 280, available: 456 },
             { id: 2, name: "Early Entry", price: 400, available: 89 },
@@ -188,7 +186,7 @@ const mockEvents = [
         id: 11,
         title: "SA Hip-Hop Fest: The Culture Lives",
         category: "Music",
-        date: "2026-09-21",
+        date: "2024-09-21",
         time: "16:00",
         venue: "WeBuyCars Dome",
         location: "Johannesburg, Gauteng",
@@ -960,6 +958,19 @@ document.addEventListener('DOMContentLoaded', () => {
     renderEvents();
     updateCartUI();
     
+    // Hamburger / mobile nav
+    const hamburgerBtn = document.getElementById('hamburger-btn');
+    const mobileNav = document.getElementById('mobile-nav');
+    const mobileNavClose = document.getElementById('mobile-nav-close');
+
+    hamburgerBtn.addEventListener('click', () => {
+        hamburgerBtn.classList.toggle('open');
+        mobileNav.classList.toggle('open');
+        document.body.style.overflow = mobileNav.classList.contains('open') ? 'hidden' : '';
+    });
+
+    mobileNavClose.addEventListener('click', closeMobileNav);
+
     // Search input
     const searchInput = document.getElementById('search-input');
     searchInput.addEventListener('input', (e) => handleSearch(e.target.value));
@@ -1024,3 +1035,12 @@ document.addEventListener('DOMContentLoaded', () => {
 window.showEventDetail = showEventDetail;
 window.removeFromCart = removeFromCart;
 window.updateTicketQuantity = updateTicketQuantity;
+
+function closeMobileNav() {
+    const hamburgerBtn = document.getElementById('hamburger-btn');
+    const mobileNav = document.getElementById('mobile-nav');
+    hamburgerBtn.classList.remove('open');
+    mobileNav.classList.remove('open');
+    document.body.style.overflow = '';
+}
+window.closeMobileNav = closeMobileNav;
