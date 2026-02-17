@@ -695,7 +695,23 @@ function goToCheckout() {
         showToast('Your cart is empty');
         return;
     }
-    
+
+    // ── AUTH GATE ──────────────────────────────────────
+    if (!isLoggedIn()) {
+        // Close the cart drawer first
+        const cartSidebar = document.getElementById('cart-sidebar');
+        const cartOverlay = document.getElementById('cart-overlay');
+        cartSidebar.classList.remove('active');
+        cartOverlay.classList.remove('active');
+        document.body.style.overflow = '';
+
+        // Open login modal; on success, re-invoke goToCheckout
+        openAuthModal('login', () => goToCheckout());
+        showToast('Please sign in to purchase tickets');
+        return;
+    }
+    // ──────────────────────────────────────────────────
+
     toggleCart();
     state.checkoutStep = 1;
     updateCheckoutStep();
@@ -882,9 +898,17 @@ function completeOrder() {
     
     setTimeout(() => {
         hideLoading();
-        
+
+        // Save to user order history
+        const orderId = saveOrderToHistory(state.cart);
+
         // Show success modal
         const modal = document.getElementById('order-complete-modal');
+        const user = getCurrentUser();
+        const successMsg = modal.querySelector('.success-message');
+        if (successMsg && user) {
+            successMsg.textContent = `Tickets sent to ${user.email}`;
+        }
         modal.classList.remove('hidden');
         
         // Clear cart and reset
@@ -894,7 +918,7 @@ function completeOrder() {
             updateCartUI();
             modal.classList.add('hidden');
             switchView('home');
-            showToast('Order completed successfully!');
+            showToast(`Order #${orderId || 'complete'} confirmed! 🎉`);
         }, 4000);
     }, 2000);
 }
@@ -947,6 +971,9 @@ function handleScroll() {
 // EVENT LISTENERS
 // ============================================
 document.addEventListener('DOMContentLoaded', () => {
+    // Boot auth system first
+    initAuth();
+
     // Load dark mode preference
     const savedDarkMode = localStorage.getItem('darkMode') === 'true';
     if (savedDarkMode) {
